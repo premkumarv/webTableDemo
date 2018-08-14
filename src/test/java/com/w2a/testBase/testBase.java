@@ -34,6 +34,7 @@ public class testBase {
 		 driver = new ChromeDriver();
 		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 driver.manage().window().maximize();
+		// driver.manage().deleteAllCookies();
 		
 		driver.get("http://www.way2automation.com/angularjs-protractor/webtables/");
 		//driver.findElement(By.xpath(OR.getProperty("addUserBtn"))).click();
