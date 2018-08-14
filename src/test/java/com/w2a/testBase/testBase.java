@@ -1,9 +1,11 @@
 package com.w2a.testBase;
 
 import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -34,6 +36,7 @@ public class testBase {
 		 driver.manage().window().maximize();
 		
 		driver.get("http://www.way2automation.com/angularjs-protractor/webtables/");
+		//driver.findElement(By.xpath(OR.getProperty("addUserBtn"))).click();
 		
 	}
 	
